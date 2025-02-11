@@ -1,0 +1,17 @@
+main : menuGeneralFRACTO.o fonctionAJOUTarticle.o fonctionAJOUTUser.o  editDATABASE.o
+gcc -wall -o main menuGeneralFRACTO.o fonctionAJOUTlarticle.o editDATABASE.o fonctionAJOUTUser.o
+
+menuGeneralFRACTO.o: editDATABASE.h database.h fonctionAJOUTlarticle.h fonctionAJOUTUser.h menuGeneralFRACTO.c
+gcc -wall -c menuGeneralFRACTO.c
+
+fonctionAJOUTarticle.o: editDATABASE.h database.h fonctionAJOUTarticle.h fonctionAJOUTarticle.c
+gcc -wall -c fonctionAJOUTarticle.c
+
+fonctionAJOUTUser.o : fonctionAJOUTUser.c editDATABASE.h database.h
+fonctionAJOUTUser.h
+gcc -wall -c fonctionAJOUTUser.c
+       
+editDATABASE.o: editDATABASE.c editDATABASE.h database.h editDATABASE.h
+gcc -wall -c editDATABASE.c
+
+rm -rf *.o main
