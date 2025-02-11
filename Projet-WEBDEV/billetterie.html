@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billetterie - Zoo de la Barben</title>
+    <link rel="stylesheet" href="css/styles_billetterie.css">
+    <link rel="stylesheet" href="css/style-changeButton.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="acceuil.html">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Zoo de la Barben">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav">
+                    <li><a href="les_habitats.html">Les Habitats</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="infos_pratique.html">Infos Pratiques</a></li>
+                    <li><a href="billetterie.html" class="cta-button2">Billetterie</a></li>
+                    <!-- Conteneur dynamique pour Connexion/Profil -->
+                    <li id="nav-connection">
+                        <a href="http://localhost:3000" class="cta-button2">Connexion</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main>
+        <section class="ticket-purchase">
+            <div class="section-header">
+                <h2>Réservez vos billets</h2>
+                <p>Vivez une journée inoubliable au Zoo de la Barben. Choisissez votre date et le nombre de billets.</p>
+            </div>
+
+            <div class="ticket-form-container">
+                <form class="ticket-form">
+                    <div class="ticket-options">
+                        <div class="ticket-type">
+                            <h3>Types de Billets</h3>
+                            <div class="ticket-type-grid">
+                                <div class="ticket-type-card">
+                                    <h4>Adulte</h4>
+                                    <p>18+ ans</p>
+                                    <div class="price-selector">
+                                        <button type="button" class="quantity-btn minus">-</button>
+                                        <input type="number" min="0" max="10" value="0" class="quantity-input">
+                                        <button type="button" class="quantity-btn plus">+</button>
+                                        <span class="price">25€</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-type-card">
+                                    <h4>Enfant</h4>
+                                    <p>3-17 ans</p>
+                                    <div class="price-selector">
+                                        <button type="button" class="quantity-btn minus">-</button>
+                                        <input type="number" min="0" max="10" value="0" class="quantity-input">
+                                        <button type="button" class="quantity-btn plus">+</button>
+                                        <span class="price">15€</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-type-card">
+                                    <h4>Enfant (-3 ans)</h4>
+                                    <p>Gratuit</p>
+                                    <div class="price-selector">
+                                        <button type="button" class="quantity-btn minus">-</button>
+                                        <input type="number" min="0" max="10" value="0" class="quantity-input">
+                                        <button type="button" class="quantity-btn plus">+</button>
+                                        <span class="price">0€</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="date-selection">
+                            <h3>Date de Visite</h3>
+                            <input type="date" id="visit-date" required>
+                        </div>
+
+                        <div class="total-summary">
+                            <h3>Résumé</h3>
+                            <div class="summary-details">
+                                <p>Adultes: <span id="adults-total">0€</span></p>
+                                <p>Enfants: <span id="children-total">0€</span></p>
+                                <p>Total: <span id="grand-total">0€</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="additional-options">
+                        <div class="promo-code">
+                            <label for="promo">Code Promo</label>
+                            <input type="text" id="promo" placeholder="Code promo (optionnel)">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Réserver</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Informations pratiques</h3>
+                <ul>
+                    <li><a href="infos_pratique.html">Horaires</a></li>
+                    <li><a href="#">Plan du parc</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="billetterie.html">Billetterie</a></li>
+                    <li><a href="services.html">services/</a></li>
+                    <li><a href="services.html">Restauration</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Tél: 04 90 55 19 12</li>
+                    <li>Email: contact@parcanimalierlabarben.com</li>
+                    <li>Adresse: Route du Château 13330 La Barben</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2015 Parc animalier de la barben. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="./js/js-billetterie.js?v=1.3"></script>
+    <script src="js/changeButton.js"></script>
+</body>
+</html>

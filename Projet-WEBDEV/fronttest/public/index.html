@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Connexion / Inscription</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-section" id="login-section">
+            <h2>Connexion</h2>
+            <form id="loginForm">
+                <input type="text" class="form-field" id="username-login" name="username" placeholder="Nom d'utilisateur" required>
+                <input type="password" class="form-field" id="password-login" name="password" placeholder="Mot de passe" required>
+                <button type="submit">Se connecter</button>
+            </form>
+            <p>Vous n'avez pas de compte ? <button id="showSignupForm">Créer un compte</button>
+            <a href="http://localhost/Projet-WEBDEV/acceuil.html" class="bouton">Retour à l'Accueil</a>
+            </p>
+            
+            
+        </div>
+
+        <div class="form-section" id="signup-section" style="display: none;">
+            <h2>Inscription</h2>
+            <form id="signupForm">
+                <input type="email" class="form-field" id="email-signup" name="email" placeholder="Email" required>
+                <input type="text" class="form-field" id="username-signup" name="username" placeholder="Nom d'utilisateur" required>
+                <input type="password" class="form-field" id="password-signup" name="password" placeholder="Mot de passe" required>
+                
+                <button type="submit">S'inscrire</button>
+            </form>
+            <p>Vous avez déjà un compte ? <button id="showLoginForm">Se connecter</button>
+            <a href="http://localhost/Projet-WEBDEV/acceuil.html" class="bouton">Retour à l'Accueil</a>
+            </p>
+    
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

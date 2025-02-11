@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/body.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement vertical entre les champs */
+    text-align: center;
+    border: 2px solid #4caf50; /* Contour vert */
+    justify-content: center; /* Centre verticalement les champs */
+    align-items: center; /* Centre horizontalement les champs */
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Les champs prennent toute la largeur */
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 90%; /* Ajuste la largeur pour aligner les champs */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+button {
+    background-color: #ffc107; /* Bouton jaune */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffca28; /* Jaune plus clair au survol */
+}
+
+p {
+    font-size: 0.9rem;
+    color: white;
+}
+
+button[id="showSignupForm"],
+button[id="showLoginForm"] {
+    background: none;
+    color: #4caf50; /* Bouton texte vert */
+    font-size: 0.9rem;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    transition: color 0.3s;
+}
+
+button[id="showSignupForm"]:hover,
+button[id="showLoginForm"]:hover {
+    color: #388e3c; /* Vert foncé au survol */
+}
+.profile-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #ffc107;
+}
+
+.profile-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#logout-button {
+    margin-top: 20px;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logout-button:hover {
+    background-color: #ffca28;
+}
+
+button[id="return"]:hover {
+    color: #388e3c; /* Vert foncé au survol */
+}
+ /*bouton retour */
+.bouton {
+    background: none;
+    color: #4caf50; /* Bouton texte vert */
+    font-size: 0.9rem;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    transition: color 0.3s;
+    margin-bottom: 100px;
+    position: relative;
+    top: 20px; /* Décale le bouton de 20px vers le bas */
+  }
+  
+/*les champ d'inscription*/
+.form-field {
+    display: block;
+    width: 90%; /* Réduit la largeur à 90% du parent */
+    max-width: 300px; /* Largeur maximale plus petite */
+    margin: 8px auto; /* Moins d'espacement vertical */
+    padding: 8px; /* Réduit l'intérieur du champ */
+    font-size: 14px; /* Police légèrement plus petite */
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bordures toujours légèrement arrondies */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Réduit l'ombre */
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }

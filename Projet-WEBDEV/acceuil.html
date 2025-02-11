@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo de la Barben</title>
+    <link rel="stylesheet" href="css/styles-acceuil.css">
+    <link rel="stylesheet" href="css/style-changeButton.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="acceuil.html">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Zoo de la Barben">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav">
+                    <li><a href="les_habitats.html">Les Habitats</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="infos_pratique.html">Infos Pratiques</a></li>
+                    <li><a href="billetterie.html" class="cta-button2">Billetterie</a></li>
+                    <!-- Conteneur dynamique pour Connexion/Profil -->
+                    <li id="nav-connection">
+                        <a href="http://localhost:3000" class="cta-button2">Connexion</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section vidéo -->
+    <section class="video-banner">
+        <video autoplay loop muted playsinline class="video-background">
+            <source src="images/video_zoo.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture des vidéos.
+        </video>
+        <div class="video-banner-content">
+            <h2>Bienvenue au zoo de la Barben</h2>
+        </div>
+    </section>
+
+    <!-- Section animaux avec carrousel -->
+    <section class="animals">
+        <h2 class="section-title">Des animaux extraordinaires !</h2>
+        <div class="animals-content">
+            <div class="animals-description">
+                <h3>Plus de 50 enclos à découvrir !</h3>
+                <p>Notre parc abrite plus de 60 espèces différentes dont certaines parmi les plus menacées au monde. Nos soigneurs passionnés travaillent chaque jour pour assurer leur bien-être et participer à des programmes de conservation internationaux.</p>
+                <ul>
+                    <li>5 biomes différents !</li>
+                    <li>Plus de 50 enclos différents !</li>
+                    <li>Plus de 60 espèces différentes !</li>
+                </ul>
+                <a href="les_habitats.html" class="cta-button">Découvrir tous nos animaux</a>
+            </div>
+
+            <div class="animals-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slides">
+                        <div class="carousel-slide"><img src="images/antilope.jpg" alt="Antilope" class="carousel-image"></div>
+                        <div class="carousel-slide"><img src="images/ara_perroquet.jpg" alt="Ara" class="carousel-image"></div>
+                        <div class="carousel-slide"><img src="images/autruche.jpg" alt="Autruche" class="carousel-image"></div>
+                        <div class="carousel-slide"><img src="images/Oryx_algazelle.jpg" alt="Oryx" class="carousel-image"></div>
+                        <div class="carousel-slide"><img src="images/rhinocéros.jpg" alt="Rhinocéros" class="carousel-image"></div>
+                        <div class="carousel-slide"><img src="images/crocodile.jpg" alt="Crocodile" class="carousel-image"></div>
+                    </div>
+                    <!-- Boutons et dots -->
+                    <button class="carousel-button prev" aria-label="Précédent">&#10094;</button>
+                    <button class="carousel-button next" aria-label="Suivant">&#10095;</button>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Informations pratiques</h3>
+                <ul>
+                    <li><a href="infos_pratique.html">Horaires</a></li>
+                    <li><a href="#">Plan du parc</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="billetterie.html">Billetterie</a></li>
+                    <li><a href="services.html">services/</a></li>
+                    <li><a href="services.html">Restauration</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Tél: 04 90 55 19 12</li>
+                    <li>Email: contact@parcanimalierlabarben.com</li>
+                    <li>Adresse: Route du Château 13330 La Barben</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2015 Parc animalier de la Barben. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Importation des scripts -->
+    <script src="js/changeButton.js "></script>
+    <script src="js/js-acceuil.js"></script>
+</body>
+</html>

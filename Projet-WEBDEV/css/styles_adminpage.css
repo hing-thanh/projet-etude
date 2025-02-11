@@ -1,0 +1,157 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête de la page */
+header {
+    background-color: #4CAF50; /* Vert doux */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteneur principal */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre des sections */
+h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+/* Formulaires */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+button:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Messages */
+#welcome-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Sections */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 2rem;
+}
+#update-enclosure-status-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #FFEB3B; /* Jaune clair */
+    border: 1px solid #FBC02D;
+    border-radius: 8px;
+}
+
+#update-enclosure-status-section h2 {
+    color: #333;
+}
+
+#update-enclosure-status-section select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#enclosure-management-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #FFECB3; /* Jaune pâle */
+    border: 1px solid #FFC107;
+    border-radius: 8px;
+}
+
+#enclosure-management-section select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#enclosure-details {
+    background-color: #FFF8E1;
+    border: 1px solid #FFC107;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+/* Style pour le bouton d'accueil dans l'en-tête */
+.home-button {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.home-button:hover {
+    background-color: #45a049;
+}

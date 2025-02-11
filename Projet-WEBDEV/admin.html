@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panneau Administrateur</title>
+    <link rel="stylesheet" href="./css/styles_adminpage.css">
+</head>
+<body>
+    <!-- En-tête avec bouton -->
+    <header>
+        <a href="http://localhost:3000" class="home-button">Retour au profil</a>
+        <h1 id="welcome-message">Chargement...</h1>
+    </header>
+
+    <!-- Section : Gestion des enclos -->
+    <main>
+        <section id="enclosure-management-section">
+            <h2>Gestion des enclos</h2>
+            <label for="enclosure-select">Sélectionnez un enclos :</label>
+            <select id="enclosure-select">
+                <option value="">-- Choisissez un enclos --</option>
+            </select>
+
+            <div id="enclosure-details" style="margin-top: 1.5rem;">
+                <p>Sélectionnez un enclos pour voir ses détails.</p>
+            </div>
+        </section>
+
+        <!-- Section : Mettre à jour les horaires de nourrissage -->
+        <section id="feeding-schedule-section">
+            <h2>Mettre à jour les horaires de nourrissage</h2>
+            <form id="feeding-schedule-form">
+                <label for="feeding-enclosure-select">Sélectionnez un enclos :</label>
+                <select id="feeding-enclosure-select">
+                    <option value="">-- Choisissez un enclos --</option>
+                </select>
+
+                <label for="feeding-schedule">Horaire de nourrissage :</label>
+                <input type="text" id="feeding-schedule" name="feeding_schedule" required>
+
+                <button type="submit">Mettre à jour</button>
+            </form>
+        </section>
+
+        <!-- Section : Déplacer un animal -->
+        <section id="move-animal-section">
+            <h2>Déplacer un animal</h2>
+            <form id="move-animal-form">
+                <label for="animal-select">Sélectionnez un animal :</label>
+                <select id="animal-select">
+                    <option value="">-- Choisissez un animal --</option>
+                </select>
+
+                <label for="move-enclosure-select">Sélectionnez un nouvel enclos :</label>
+                <select id="move-enclosure-select">
+                    <option value="">-- Choisissez un enclos --</option>
+                </select>
+
+                <button type="submit">Déplacer</button>
+            </form>
+        </section>
+
+        <!-- Section : Mettre à jour l'état d'un enclos -->
+        <section id="update-enclosure-status-section">
+            <h2>Mettre à jour l'état d'un enclos</h2>
+            <form id="update-enclosure-status-form">
+                <label for="status-enclosure-select">Sélectionnez un enclos :</label>
+                <select id="status-enclosure-select">
+                    <option value="">-- Choisissez un enclos --</option>
+                </select>
+
+                <label for="enclosure-status">État de l'enclos :</label>
+                <select id="enclosure-status" name="status" required>
+                    <option value="ouvert">Ouvert</option>
+                    <option value="en travaux">En travaux</option>
+                </select>
+
+                <button type="submit">Mettre à jour</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

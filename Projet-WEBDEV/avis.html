@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo de la Barben</title>
+    <link rel="stylesheet" href="css/styles-avis.css">
+    <link rel="stylesheet" href="css/style-changeButton.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="acceuil.html">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Zoo de la Barben">
+                </div>
+            </a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="les_habitats.html">Les Habitats</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="infos_pratique.html">Infos Pratiques</a></li>
+                    <li><a href="billetterie.html" class="cta-button2">Billetterie</a></li>
+                    <!-- Conteneur dynamique pour Connexion/Profil -->
+                    <li id="nav-connection">
+                        <a href="http://localhost:3000" class="cta-button2">Connexion</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Modification de la section des avis -->
+<div class="review-section">
+    <div id="review-card">
+        <h2>✨ Partagez votre expérience ✨</h2>
+        <p>Votre avis est précieux pour nous et aide d'autres visiteurs à découvrir notre parc</p>
+        
+        <form id="review-form">
+            <div class="form-group">
+                <label for="enclosure-select">🏰 Choisissez un enclos</label>
+                <select id="enclosure-select" required>
+                    <option value="">Sélectionnez un enclos</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">⭐ Votre note</label>
+                <select id="rating" required>
+                    <option value="">Quelle est votre appréciation ?</option>
+                    <option value="5">5 étoiles - Une expérience inoubliable !</option>
+                    <option value="4">4 étoiles - Très belle découverte</option>
+                    <option value="3">3 étoiles - Agréable visite</option>
+                    <option value="2">2 étoiles - Quelques points à améliorer</option>
+                    <option value="1">1 étoile - Déçu de l'expérience</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">💭 Votre commentaire</label>
+                <textarea id="comment" 
+                    placeholder="Racontez-nous votre visite... Qu'avez-vous particulièrement apprécié ? " 
+                    required></textarea>
+            </div>
+
+            <button id="leave-review-btn" type="submit">
+                Partager mon expérience
+            </button>
+        </form>
+    </div>
+</div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Informations pratiques</h3>
+                <ul>
+                    <li><a href="infos_pratique.html">Horaires</a></li>
+                    <li><a href="#">Plan du parc</a></li>
+                    <li><a href="#">Restauration</a></li>
+                    <li><a href="#">Hébergement</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="billetterie.html">Billetterie</a></li>
+                    <li><a href="services.html">services/</a></li>
+                    <li><a href="services.html">Restauration</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Tél: 02 54 75 50 00</li>
+                    <li>Email: contact@zooparc.fr</li>
+                    <li>Adresse: 41110 Saint-Aignan</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 ZooParc. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+    <script src="js/changeButton.js"></script>
+    <script src="js/js-avis.js"></script>
+    
+</body>
+</html>

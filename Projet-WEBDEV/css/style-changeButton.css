@@ -1,0 +1,19 @@
+#nav-connection {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: flex-end; /* Aligne les éléments à droite */
+    gap: 5px; /* Espace entre les éléments */
+}
+
+.username-welcome {
+    color: rgb(245, 243, 239);
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    padding-right: 10px; /* Ajoute un peu d'espace à droite */
+    margin-bottom: 2px; /* Ajoute un petit espace avant le bouton */
+    display: block; /* Force le texte à prendre sa propre ligne */
+}
